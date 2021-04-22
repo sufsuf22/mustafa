@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #d3d3d3;
+            width: 100vw;
+            height: 100vh;
+        }
+        .content {
+            width: 60vw;
+            margin: 0 auto;
+           
+        }
+        #form {
+            display: flex;
+            flex-direction: column;
+            gap: 20;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30vh;
+            box-shadow: 5px 5px 5px 5px (0, 0, 0, .2);
+            background-color: transparent;
+        }
+        #form input {
+            width: 40%;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        #msg {
+            color: red;
+        }
+        .list {
+            list-style-type: none;
+            position: absolute;
+            top: 30vh;
+            left: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <ul class="list"><li>......Info......</li></ul>
+        <form action="#" id="form" method="post">
+            <span id="msg"></span>
+            <input type="text" name="fullname" placeholder="Fullname" autocomplete="off" autofocus>
+            <input type="text" name="email" placeholder="Email" autocomplete="off" autofocus>
+            <input type="password" name="password" placeholder="Password"  autocomplete="off" autofocus>
+            <input type="password" name="confirmation" placeholder="Password(again)"  autocomplete="off" autofocus>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script src="b6.js"></script>
+</body>
+</html>
